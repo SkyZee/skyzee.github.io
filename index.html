@@ -7,9 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="main.js"></script>
+  <script type="text/javascript">
+    function openURL()
+    {
+        var shell = new ActiveXObject("WScript.Shell");
+        shell.run("http://www.google.com");
+    }
+    </script>
 </head>
 <body>
+  <a href="microsoft-edge:https://caniuse.com/#compare=ie+11,edge+18,firefox+67,chrome+75">Compare browsers using Edge</a>
   <A HREF="microsoft-edge:http://www.itworld.com/blog/readme-file">Open README file with Edge</A>
-
+  <input type="button" onclick="openURL()" value="Open Google">
 </body>
 </html>
